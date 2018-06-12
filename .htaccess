@@ -1,0 +1,14 @@
+AddDefaultCharset UTF-8
+
+<Filesmatch ".(php)$">
+order deny,allow
+deny from all
+</Filesmatch>
+<Filesmatch "^index.php">
+order allow,deny
+allow from all
+</Filesmatch>
+<Filesmatch "^login.php">
+order allow,deny
+allow from all
+</Filesmatch>
